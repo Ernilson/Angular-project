@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "algaworksProject"
+    }
+  },
+  "defaultProject": "algaworksProject",
+  "cli": {
+    "analytics": "d92eb4a2-ee47-4267-bd71-6fa28ad6d83c"
+  }
 }
