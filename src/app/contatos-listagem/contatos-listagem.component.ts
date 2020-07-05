@@ -1,4 +1,3 @@
-import { from } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ContatosService } from '../contatos.service';
 import { FormGroup } from '@angular/forms';
@@ -20,6 +19,7 @@ export class ContatosListagemComponent implements OnInit {
     this.listar();
     this.contatos = {};
   }
+  
   listar(){
     this.contatoservice.listar().subscribe(dados => this.contato = dados);
   }
@@ -28,6 +28,7 @@ export class ContatosListagemComponent implements OnInit {
   criar(frm: { reset: () => void; }){
       this.contatoservice.criar(this.contatos).subscribe(resposta => {
       this.contato.push(resposta);
+
       frm.reset(); 
     });
   }

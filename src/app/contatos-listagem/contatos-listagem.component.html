@@ -19,7 +19,7 @@
 
           <div class="form-group">
             <label for="fone">Telefone</label>
-            <input type="text" id="fone" name="fone"
+            <input type="number" id="fone" name="fone"
               class="form-control" placeholder="Nº Telefone"
               [(ngModel)]="contatos.fone" required/>
           </div>  
@@ -34,8 +34,7 @@
          <div class="form-group">
             <label for="favoritos">Favoritos</label>
             <input type="text" id="favoritos" name="favoritos"
-              class="form-control" 
-              />
+              class="form-control" [(ngModel)]="contatos.favoritos"       />
           </div>
   
   
